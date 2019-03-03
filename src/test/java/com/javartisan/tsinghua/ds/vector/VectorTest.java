@@ -13,4 +13,12 @@ public class VectorTest {
 
     }
 
+    @Test
+    public void test() {
+        int val =2;
+        System.out.println(2 << 1);
+        System.out.println(val <<= 1);
+        System.out.println(val);
+    }
+
 }

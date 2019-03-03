@@ -122,6 +122,7 @@ public class Vector<T extends Comparable<T>> {
         return size;
     }
 
+    // 扩容策略需要权衡时间与空间复杂度
     private void expand() {
         if (size >= capacity) {
             //注意：运算符的优先级:+高于>>
