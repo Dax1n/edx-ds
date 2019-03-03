@@ -125,6 +125,7 @@ public class Vector<T extends Comparable<T>> {
     private void expand() {
         if (size >= capacity) {
             //注意：运算符的优先级:+高于>>
+            //扩容：每次扩容0.5倍
             capacity = capacity + (capacity >> 1);
             Object[] array = new Object[capacity];
             System.arraycopy(elems, 0, array, 0, size);
