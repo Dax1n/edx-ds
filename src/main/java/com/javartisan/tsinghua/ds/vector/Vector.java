@@ -229,6 +229,29 @@ public class Vector<T extends Comparable<T>> {
         }
     }
 
+
+    public int binarySearch(T e, int lo, int hi) {
+        while (lo < hi) {
+            int mid = (lo + hi) >> 1;
+            int compared = e.compareTo((T) elems[mid]);
+            if (compared == 0) {
+                return mid;
+            }
+            if (compared > 0) {
+                //为什么此处要+1呢?
+                // 此if分支是符合的区间在右边，因此需要将mid赋值给lo
+                // 但是当lo+1=hi时候，如果lo不等于mid+1的话会死循环，原因:具体 ，当lo=2，hi=3的话
+                // lo+hi>>1 为2 ，即mid=2，将mid赋值给lo，lo保持原地不动，所以死循环。
+                //所以最核心原因是：(lo+hi)/2!=0计算机计算时候总是向下整除
+                lo = mid + 1;
+            } else {
+                // mid已经不等于，所以可以缩短比较空间
+                hi = mid - 1;
+            }
+        }
+        return hi - 1;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
