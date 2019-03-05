@@ -263,7 +263,7 @@ public class Vector<T extends Comparable<T>> {
                 T after = (T) elems[j + 1];
                 if (before.compareTo(after) > 0) {
                     swap(j, j + 1);
-                    // 优化的冒泡排序算法
+                    // 优化的冒泡排序算法,此处不能直接将j赋值给i，因为内层循环的终止条件以来i
                     limit = j;
                 }
             }
