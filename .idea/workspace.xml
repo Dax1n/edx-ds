@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="32740edb-a68c-49c3-a7cd-71da9ecd3978" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/vector/Vector.java" afterPath="$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/vector/Vector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/vector/VectorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/vector/VectorTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,21 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Vector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Vector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/vector/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="258" column="25" lean-forward="true" selection-start-line="258" selection-start-column="25" selection-end-line="258" selection-end-column="25" />
+            <state relative-caret-position="399">
+              <caret line="272" column="22" lean-forward="false" selection-start-line="272" selection-start-column="22" selection-end-line="272" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VectorTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VectorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/vector/VectorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,8 +90,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/vector/VectorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/vector/Vector.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/vector/VectorTest.java" />
       </list>
     </option>
   </component>
@@ -487,23 +489,11 @@
       <workItem from="1551622066340" duration="3575000" />
       <workItem from="1551656759964" duration="277000" />
       <workItem from="1551707413816" duration="1129000" />
-      <workItem from="1551795045911" duration="1569000" />
+      <workItem from="1551795045911" duration="1929000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VectorTest_testAdd - 2019.03.05 at 22h 21m 55s.xml">
-      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorTest_testAdd - 2019.03.05 at 22h 23m 50s.xml">
-      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorTest_testAdd - 2019.03.05 at 22h 25m 13s.xml">
-      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorTest_testAdd - 2019.03.05 at 22h 25m 52s.xml">
-      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VectorTest_testAdd - 2019.03.05 at 22h 28m 53s.xml">
       <configuration name="VectorTest.testAdd" configurationId="JUnit" />
     </history-entry>
@@ -522,9 +512,21 @@
     <history-entry file="VectorTest_testAdd - 2019.03.05 at 22h 36m 47s.xml">
       <configuration name="VectorTest.testAdd" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VectorTest_testAdd - 2019.03.05 at 22h 37m 15s.xml">
+      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VectorTest_testAdd - 2019.03.05 at 22h 43m 26s.xml">
+      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VectorTest_testAdd - 2019.03.05 at 22h 43m 43s.xml">
+      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VectorTest_testAdd - 2019.03.05 at 22h 46m 19s.xml">
+      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7537000" />
+    <option name="totallyTimeSpent" value="7897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -539,7 +541,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37122127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37122127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20798065" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -550,7 +552,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -611,7 +613,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/vector/VectorTest.java</url>
-          <line>33</line>
+          <line>32</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -620,8 +622,14 @@
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/vector/Vector.java</url>
+          <line>272</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -772,21 +780,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/vector/VectorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/vector/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="399">
+          <caret line="272" column="22" lean-forward="false" selection-start-line="272" selection-start-column="22" selection-end-line="272" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/vector/Vector.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/vector/VectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="258" column="25" lean-forward="true" selection-start-line="258" selection-start-column="25" selection-end-line="258" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

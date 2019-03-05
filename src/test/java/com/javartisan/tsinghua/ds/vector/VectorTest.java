@@ -10,10 +10,10 @@ public class VectorTest {
 
     @Test
     public void testAdd() {
-
+        Vector<Integer> vector = null;
         Random random = new Random();
         for (int j = 0; j < 10; j++) {
-            Vector<Integer> vector = new Vector<>();
+            vector = new Vector<>();
             for (int i = 0; i < 10; i++) {
                 vector.add(random.nextInt(10));
             }
@@ -22,9 +22,8 @@ public class VectorTest {
             vector.bubble();
             System.out.println(vector);
         }
-
-
-//        vector.sort();
+        vector.sort();
+        vector.bubble();
 //        System.out.println(vector);
 //        System.out.println(vector.binarySearch(-1, 0, 10));
 //        System.out.println(vector.binarySearch(2, 0, 10));
