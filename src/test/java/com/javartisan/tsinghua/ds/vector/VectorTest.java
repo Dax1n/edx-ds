@@ -3,23 +3,33 @@ package com.javartisan.tsinghua.ds.vector;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class VectorTest {
 
     @Test
     public void testAdd() {
-        Vector<Integer> vector = new Vector<>();
+
         Random random = new Random();
-        for (int i = 0; i < 10; i++) {
-            vector.add(random.nextInt(10));
+        for (int j = 0; j < 10; j++) {
+            Vector<Integer> vector = new Vector<>();
+            for (int i = 0; i < 10; i++) {
+                vector.add(random.nextInt(10));
+            }
+
+            System.out.println(vector);
+            vector.bubble();
+            System.out.println(vector);
         }
-        vector.sort();
-        System.out.println(vector);
-        System.out.println(vector.binarySearch(-1, 0, 10));
-        System.out.println(vector.binarySearch(2, 0, 10));
-        System.out.println(vector.binarySearch(5, 0, 10));
-        System.out.println(vector.binarySearch(50, 0, 10));
+
+
+//        vector.sort();
+//        System.out.println(vector);
+//        System.out.println(vector.binarySearch(-1, 0, 10));
+//        System.out.println(vector.binarySearch(2, 0, 10));
+//        System.out.println(vector.binarySearch(5, 0, 10));
+//        System.out.println(vector.binarySearch(50, 0, 10));
 
         // Assert.assertTrue("size not equal t0 zero .", vector.size() == 1);
 

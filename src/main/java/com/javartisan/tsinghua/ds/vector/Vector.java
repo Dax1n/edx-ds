@@ -252,6 +252,24 @@ public class Vector<T extends Comparable<T>> {
         return hi - 1;
     }
 
+    /**
+     * 优化的冒泡算法
+     */
+    public void bubble() {
+        int limit = size;
+        for (int i = limit; i > 0; i--) {
+            for (int j = 0; j < i - 1; j++) {
+                T before = (T) elems[j];
+                T after = (T) elems[j + 1];
+                if (before.compareTo(after) > 0) {
+                    swap(j, j + 1);
+                    // 优化的冒泡排序算法
+                    limit = j;
+                }
+            }
+        }
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
