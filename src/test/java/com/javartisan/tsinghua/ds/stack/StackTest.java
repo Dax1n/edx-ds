@@ -26,7 +26,7 @@ public class StackTest {
         }
 
 
-        while (s.size > 0) {
+        while (s.size() > 0) {
             System.out.print(s.pop());
         }
         System.out.println();
