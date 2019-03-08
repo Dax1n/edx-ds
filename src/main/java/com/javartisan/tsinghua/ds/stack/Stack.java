@@ -1,6 +1,9 @@
 package com.javartisan.tsinghua.ds.stack;
 
+
 /**
+ * 实现一个任意进制到任意进制的转换的算法
+ *
  * @param <T>
  */
 public class Stack<T> {
@@ -54,7 +57,13 @@ public class Stack<T> {
         }
     }
 
-    public String transformNumber(int num, int radix) {
+
+    public String transform() {
+        //TODO 实现一个任意进制到任意进制的转换的算法
+        return "";
+    }
+
+    public String transformToRadix(int num, int radix) {
         char[] digt = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
         Stack<Character> stack = new Stack<>();
         while (num != 0) {

@@ -30,8 +30,8 @@ public class StackTest {
             System.out.print(s.pop());
         }
         System.out.println();
-        System.out.println(s.transformNumber(89, 2));
-        System.out.println(s.transformNumber(175, 2));
+        System.out.println(s.transformToRadix(89, 2));
+        System.out.println(s.transformToRadix(175, 2));
 
         int aa = 031;
         int aaa = 0x31;
@@ -41,8 +41,8 @@ public class StackTest {
 
         System.out.println("========================");
         int af = 0xAF;
-        System.out.println(s.transformNumber(af, 2));
-        System.out.println(s.transformNumber(0xF, 10));
+        System.out.println(s.transformToRadix(af, 2));
+        System.out.println(s.transformToRadix(0xF, 10));
         System.out.println(Integer.parseInt("F", 16));
         System.out.println(Integer.parseInt("1", 16));
 
