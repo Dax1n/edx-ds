@@ -1,6 +1,5 @@
 package com.javartisan.tsinghua.ds.stack;
 
-
 /**
  * 实现一个任意进制到任意进制的转换的算法
  *
@@ -44,6 +43,10 @@ public class Stack<T> {
         return size;
     }
 
+    public boolean empty() {
+        return size == 0;
+    }
+
     public T peek() {
         return (T) data[size - 1];
     }
@@ -76,5 +79,62 @@ public class Stack<T> {
             builder.append(stack.pop());
         }
         return builder.toString();
+    }
+
+
+    /**
+     * 借助栈实现的表达式匹配，但是实际上可以使用计数器进行实现
+     *
+     * @param expr
+     * @return
+     */
+    public boolean exprMatch(String expr) {
+        int len = expr.length();
+        Stack<Character> s = new Stack<>();
+        //while循环，从后向前匹配了。也可以前向后
+        while (len > 0) {
+            Character ch = expr.charAt(--len);
+            switch (ch) {
+                case ')':
+                    s.push(ch);
+                    break;
+                case '(':
+                    if (s.empty()) {
+                        return false;
+                    }
+                    char current = s.pop();
+                    if (current != ')') {
+                        return false;
+                    }
+                    break;
+            }
+        }
+        return s.empty();
+    }
+
+    /**
+     * 这个实现支持一种括号匹配，多个括号需要多个计数器，例如：([)]返例
+     *
+     * @param expr
+     * @return
+     */
+    public boolean exprMatch2(String expr) {
+        int count = 0;
+        int len = expr.length();
+        while (len > 0) {
+            char ch = expr.charAt(--len);
+            switch (ch) {
+                case ')':
+                    count++;
+                    break;
+                case '(':
+                    if (count == 0) {
+                        return false;
+                    }
+                    count--;
+                    break;
+            }
+        }
+        return count == 0;
     }
 }

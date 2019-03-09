@@ -47,4 +47,20 @@ public class StackTest {
         System.out.println(Integer.parseInt("1", 16));
 
     }
+
+    @Test
+    public void exprMatch() {
+        String expr = "((a+b)*c+d*(e-f))";
+        Stack<Character> s = new Stack<>();
+        System.out.println(s.exprMatch(expr));
+    }
+
+    @Test
+    public void exprMatch2() {
+        String expr = "((a+b)*c+d*(e-f))";
+        Stack<Character> s = new Stack<>();
+        System.out.println(s.exprMatch2(expr));
+    }
+
+
 }
