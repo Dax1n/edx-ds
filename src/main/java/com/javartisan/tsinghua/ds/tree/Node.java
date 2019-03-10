@@ -159,21 +159,19 @@ class Node<T> {
     public void inOrder() {
         Stack<Node> recursiveStack = new Stack<>();
         Node node = this;
-        recursiveStack.push(node);
-        while (!recursiveStack.empty()) {
+        while (true) {
             while (node != null) {
                 recursiveStack.push(node);
                 node = node.left;
             }
             node = recursiveStack.pop();
             System.out.print(node.data + " ");
-            if (node.right != null) {
-                recursiveStack.push(node.right);
-            }
-            if (recursiveStack.empty()) {
+            node = node.right;
+            // 栈为空，只有到顶层root时候才可能为空，如果到了root之后
+            // root右侧节点也为空的话，那么遍历也就结束了
+            if ((recursiveStack.empty() && node == null)) {
                 break;
             }
-            node = recursiveStack.pop();
         }
     }
 

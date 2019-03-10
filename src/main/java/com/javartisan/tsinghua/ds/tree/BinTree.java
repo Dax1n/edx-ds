@@ -1,6 +1,5 @@
 package com.javartisan.tsinghua.ds.tree;
 
-import java.util.ArrayList;
 
 /**
  * @author:javartisan
