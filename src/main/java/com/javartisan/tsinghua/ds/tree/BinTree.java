@@ -3,6 +3,7 @@ package com.javartisan.tsinghua.ds.tree;
 public class BinTree<T> {
 
     private int size;
+    private int height;
 
     private Node<T> root;
 
@@ -12,17 +13,20 @@ public class BinTree<T> {
 
     public void setRoot(Node<T> root) {
         this.root = root;
-        size = size();
+        sizeInternal();
+        heightInternal();
     }
 
     public void insertAsLeftChild(T e) {
         root.insertAsLeftChild(e);
         size++;
+        heightInternal();
     }
 
     public void insertAsRightChild(T e) {
         insertAsRightChild(e);
         size++;
+        heightInternal();
     }
 
     /**
@@ -30,8 +34,12 @@ public class BinTree<T> {
      *
      * @return
      */
-    public int getSize() {
+    public int size() {
         return size;
+    }
+
+    public int height() {
+        return height;
     }
 
     /**
@@ -39,12 +47,12 @@ public class BinTree<T> {
      *
      * @return
      */
-    public int size() {
+    private void sizeInternal() {
         int sizeValue = 0;
         if (root != null) {
             sizeValue = root.size();
         }
-        return sizeValue;
+        size = sizeValue;
     }
 
     /**
@@ -52,13 +60,13 @@ public class BinTree<T> {
      *
      * @return
      */
-    public int height() {
+    public void heightInternal() {
         // 默认值为树空
-        int height = -1;
+        int heightValue = -1;
         if (root != null) {
-            height = root.height();
+            heightValue = root.height();
         }
-        return height;
+        height = heightValue;
     }
 
     public static void main(String[] args) {
