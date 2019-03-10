@@ -1,5 +1,7 @@
 package com.javartisan.tsinghua.ds.tree;
 
+import java.util.ArrayList;
+
 /**
  * @author:javartisan
  * @mail:javartisan@163.com
@@ -68,23 +70,36 @@ public class BinTree<T> {
         height = heightValue;
     }
 
+    private boolean isEmpty() {
+        return root == null;
+    }
+
     /**
      * 先序递归：先遍历当前节点，之后遍历左节点，最后遍历右节点的顺序为先序遍历；
      * 所以先中后序遍历的决定因素是：是由遍历当前节点的次序决定。
      */
     public void preRecursiveOrder() {
+        if (isEmpty())
+            return;
+        root.preRecursiveOrder();
     }
 
     /**
      * 中序递归
      */
     public void inRecursiveOrder() {
+        if (isEmpty())
+            return;
+        root.inRecursiveOrder();
     }
 
     /**
      * 后序递归
      */
     public void postRecursiveOrder() {
+        if (isEmpty())
+            return;
+        root.postRecursiveOrder();
     }
 
     /**

@@ -86,4 +86,67 @@ class Node<T> {
         }
         return Math.max(leftHeight, rightHeight) + 1;
     }
+
+    /**
+     * 先序递归
+     */
+    public void preRecursiveOrder() {
+        System.out.print(this.data + " ");
+        if (this.left != null) {
+            this.left.preRecursiveOrder();
+        }
+        if (this.right != null) {
+            this.right.preRecursiveOrder();
+        }
+    }
+
+    /**
+     * 中序递归
+     */
+    public void inRecursiveOrder() {
+        if (this.left != null) {
+            this.left.inRecursiveOrder();
+        }
+        System.out.print(this.data + " ");
+        if (this.right != null) {
+            this.right.inRecursiveOrder();
+        }
+    }
+
+    /**
+     * 后序递归
+     */
+    public void postRecursiveOrder() {
+        if (this.left != null) {
+            this.left.postRecursiveOrder();
+        }
+        if (this.right != null) {
+            this.right.postRecursiveOrder();
+        }
+        System.out.print(this.data + " ");
+    }
+
+    /**
+     * 先序非递归
+     */
+    public void preOrder() {
+    }
+
+    /**
+     * 中序非递归
+     */
+    public void inOrder() {
+    }
+
+    /**
+     * 后序非递归
+     */
+    public void postOrder() {
+    }
+
+    /**
+     * 层次递归
+     */
+    public void levelOrder() {
+    }
 }
