@@ -1,10 +1,12 @@
 package com.javartisan.tsinghua.ds.tree;
 
+import java.util.Map;
+
 class Node<T> {
-    private T data;
-    private Node parent;
-    private Node left;
-    private Node right;
+    T data;
+    Node parent;
+    Node left;
+    Node right;
 
     public Node(T data) {
         this.data = data;
@@ -65,9 +67,19 @@ class Node<T> {
         return root;
     }
 
-    public static void main(String[] args) {
-        System.out.println(Node.build().size());
+    public int height() {
+        if (this.left == this.right && this.right == null) {
+            return 0;
+        }
 
+        int leftHeight = -1;
+        if (this.left != null) {
+            leftHeight = this.left.height();
+        }
+        int rightHeight = -1;
+        if (this.right != null) {
+            rightHeight = this.right.height();
+        }
+        return Math.max(leftHeight, rightHeight) + 1;
     }
-
 }
