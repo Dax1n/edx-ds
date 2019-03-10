@@ -107,20 +107,35 @@ class Node<T> {
      */
     public void preOrder() {
         // 栈用于模拟递归栈
-        Stack<Node> stack = new Stack<>();
+        Stack<Node> recursiveStack = new Stack<>();
         // 遍历当前节点，将当前节点存储到递归栈中
-        stack.push(this);
+        recursiveStack.push(this);
         //只有当递归栈中没有数据了则遍历完毕
-        while (!stack.empty()) {
-            Node node = stack.pop();
+        while (!recursiveStack.empty()) {
+            Node node = recursiveStack.pop();
             //模拟递归中左孩子节点的递归遍历
             //只要左孩子不为空一直遍历
             while (node != null) {
                 System.out.print(node.data + " ");
                 // 在递归中遍历左节点时候，右节点的递归遍历得不到执行
                 // 因此调用栈会将右节点的递归调用放到递归栈中用于记录调用链
-                stack.push(node.right);
+                recursiveStack.push(node.right);
                 node = node.left;
+            }
+        }
+    }
+
+    public void preOrder2() {
+        Stack<Node> recursiveStack = new Stack<>();
+        recursiveStack.push(this);
+        while (!recursiveStack.empty()) {
+            Node node = recursiveStack.pop();
+            System.out.print(node.data + " ");
+            if (node.right != null) {
+                recursiveStack.push(node.right);
+            }
+            if (node.left != null) {
+                recursiveStack.push(node.left);
             }
         }
     }
@@ -139,6 +154,30 @@ class Node<T> {
     }
 
     /**
+     * 中序非递归
+     */
+    public void inOrder() {
+        Stack<Node> recursiveStack = new Stack<>();
+        Node node = this;
+        recursiveStack.push(node);
+        while (!recursiveStack.empty()) {
+            while (node != null) {
+                recursiveStack.push(node);
+                node = node.left;
+            }
+            node = recursiveStack.pop();
+            System.out.print(node.data + " ");
+            if (node.right != null) {
+                recursiveStack.push(node.right);
+            }
+            if (recursiveStack.empty()) {
+                break;
+            }
+            node = recursiveStack.pop();
+        }
+    }
+
+    /**
      * 后序递归：非尾递归
      */
     public void postRecursiveOrder() {
@@ -149,12 +188,6 @@ class Node<T> {
             this.right.postRecursiveOrder();
         }
         System.out.print(this.data + " ");
-    }
-
-    /**
-     * 中序非递归
-     */
-    public void inOrder() {
     }
 
     /**

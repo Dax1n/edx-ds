@@ -109,16 +109,25 @@ public class BinTree<T> {
             root.preOrder();
     }
 
+    public void preOrder2() {
+        if (!isEmpty())
+            root.preOrder2();
+    }
+
     /**
      * 中序非递归
      */
     public void inOrder() {
+        if (!isEmpty())
+            root.inOrder();
     }
 
     /**
      * 后序非递归
      */
     public void postOrder() {
+        if (!isEmpty())
+            root.postOrder();
     }
 
     /**

@@ -26,12 +26,15 @@ public class BinTreeTest {
         tree.preRecursiveOrder();
         System.out.println();
         tree.preOrder();
+        System.out.println();
+        tree.preOrder2();
     }
 
     @Test
     public void inRecursiveOrder() {
         tree.inRecursiveOrder();
         System.out.println();
+        tree.inOrder();
     }
 
     @Test
