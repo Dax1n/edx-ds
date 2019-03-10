@@ -25,6 +25,7 @@ public class BinTreeTest {
     public void preRecursiveOrder() {
         tree.preRecursiveOrder();
         System.out.println();
+        tree.preOrder();
     }
 
     @Test

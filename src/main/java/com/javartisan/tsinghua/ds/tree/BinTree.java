@@ -97,15 +97,16 @@ public class BinTree<T> {
      * 后序递归
      */
     public void postRecursiveOrder() {
-        if (isEmpty())
-            return;
-        root.postRecursiveOrder();
+        if (!isEmpty())
+            root.postRecursiveOrder();
     }
 
     /**
      * 先序非递归
      */
     public void preOrder() {
+        if (!isEmpty())
+            root.preOrder();
     }
 
     /**

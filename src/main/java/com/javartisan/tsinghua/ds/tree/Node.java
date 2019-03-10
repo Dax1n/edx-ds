@@ -1,5 +1,7 @@
 package com.javartisan.tsinghua.ds.tree;
 
+import java.util.Stack;
+
 /**
  * @author:javartisan
  * @mail:javartisan@163.com
@@ -88,7 +90,7 @@ class Node<T> {
     }
 
     /**
-     * 先序递归
+     * 先序递归：先序与中序都是尾递归，尾递归很容易改写迭代调用
      */
     public void preRecursiveOrder() {
         System.out.print(this.data + " ");
@@ -101,7 +103,30 @@ class Node<T> {
     }
 
     /**
-     * 中序递归
+     * 先序非递归，根据先序递归调用改写迭代版本
+     */
+    public void preOrder() {
+        // 栈用于模拟递归栈
+        Stack<Node> stack = new Stack<>();
+        // 遍历当前节点，将当前节点存储到递归栈中
+        stack.push(this);
+        //只有当递归栈中没有数据了则遍历完毕
+        while (!stack.empty()) {
+            Node node = stack.pop();
+            //模拟递归中左孩子节点的递归遍历
+            //只要左孩子不为空一直遍历
+            while (node != null) {
+                System.out.print(node.data + " ");
+                // 在递归中遍历左节点时候，右节点的递归遍历得不到执行
+                // 因此调用栈会将右节点的递归调用放到递归栈中用于记录调用链
+                stack.push(node.right);
+                node = node.left;
+            }
+        }
+    }
+
+    /**
+     * 中序递归：先序与中序都是尾递归，尾递归很容易改写迭代调用
      */
     public void inRecursiveOrder() {
         if (this.left != null) {
@@ -114,7 +139,7 @@ class Node<T> {
     }
 
     /**
-     * 后序递归
+     * 后序递归：非尾递归
      */
     public void postRecursiveOrder() {
         if (this.left != null) {
@@ -124,12 +149,6 @@ class Node<T> {
             this.right.postRecursiveOrder();
         }
         System.out.print(this.data + " ");
-    }
-
-    /**
-     * 先序非递归
-     */
-    public void preOrder() {
     }
 
     /**

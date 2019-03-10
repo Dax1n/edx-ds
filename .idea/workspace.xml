@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32740edb-a68c-49c3-a7cd-71da9ecd3978" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/tree/BinTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/tree/BinTree.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/tree/Node.java" afterPath="$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/tree/Node.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/tree/BinTreeTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/tree/BinTreeTest.java" />
@@ -42,14 +41,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/tree/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="107" column="38" lean-forward="false" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+            <state relative-caret-position="297">
+              <caret line="105" column="27" lean-forward="false" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
               <folding>
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/Stack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="111" column="19" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
+              <folding>
+                <element signature="e#2838#2839#0" expanded="true" />
+                <element signature="e#2872#2873#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +70,8 @@
       <file leaf-file-name="BinTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/tree/BinTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="89" column="24" lean-forward="true" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="32" />
+            <state relative-caret-position="249">
+              <caret line="108" column="20" lean-forward="false" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
               <folding>
                 <element signature="e#680#681#0" expanded="true" />
                 <element signature="e#707#708#0" expanded="true" />
@@ -72,13 +84,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinTreeTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BinTreeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/tree/BinTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="448">
+              <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#861#862#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -336,7 +350,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BinTreeTest.postRecursiveOrder">
+  <component name="RunManager" selected="JUnit.BinTreeTest.preRecursiveOrder">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -545,9 +559,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BinTreeTest.postRecursiveOrder" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BinTreeTest.inRecursiveOrder" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BinTreeTest.preRecursiveOrder" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BinTreeTest.preRecursiveOrder" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BinTreeTest.postRecursiveOrder" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BinTreeTest.inRecursiveOrder" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.BinTreeTest" />
         <item index="4" class="java.lang.String" itemvalue="Application.BinTree" />
       </list>
@@ -573,7 +587,7 @@
       <updated>1551585618823</updated>
       <workItem from="1551585620580" duration="3242000" />
       <workItem from="1552022015640" duration="657000" />
-      <workItem from="1552207264171" duration="5183000" />
+      <workItem from="1552207264171" duration="6645000" />
     </task>
     <servers />
   </component>
@@ -590,27 +604,27 @@
     <history-entry file="BinTreeTest_inRecursiveOrder - 2019.03.10 at 18h 10m 02s.xml">
       <configuration name="BinTreeTest.inRecursiveOrder" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BinTreeTest_postRecursiveOrder - 2019.03.10 at 18h 10m 18s.xml">
+      <configuration name="BinTreeTest.postRecursiveOrder" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="BinTreeTest_preRecursiveOrder - 2019.03.10 at 18h 08m 43s.xml">
       <configuration name="BinTreeTest.preRecursiveOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VectorTest_test - 2019.03.03 at 12h 37m 20s.xml">
-      <configuration name="VectorTest.test" configurationId="JUnit" />
+    <history-entry file="BinTreeTest_preRecursiveOrder - 2019.03.10 at 18h 32m 17s.xml">
+      <configuration name="BinTreeTest.preRecursiveOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VectorTest_testAdd - 2019.03.03 at 12h 09m 50s.xml">
-      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
+    <history-entry file="BinTreeTest_preRecursiveOrder - 2019.03.10 at 18h 32m 49s.xml">
+      <configuration name="BinTreeTest.preRecursiveOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VectorTest_testAdd - 2019.03.03 at 12h 10m 44s.xml">
-      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
+    <history-entry file="BinTreeTest_preRecursiveOrder - 2019.03.10 at 18h 32m 58s.xml">
+      <configuration name="BinTreeTest.preRecursiveOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VectorTest_testAdd - 2019.03.03 at 12h 11m 31s.xml">
-      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorTest_testAdd - 2019.03.03 at 12h 11m 51s.xml">
-      <configuration name="VectorTest.testAdd" configurationId="JUnit" />
+    <history-entry file="BinTreeTest_preRecursiveOrder - 2019.03.10 at 18h 33m 13s.xml">
+      <configuration name="BinTreeTest.preRecursiveOrder" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9082000" />
+    <option name="totallyTimeSpent" value="10544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -636,9 +650,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32139203" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16683726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16990788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04094166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25274727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -855,21 +869,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/tree/Node.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="107" column="38" lean-forward="false" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+        <state relative-caret-position="236">
+          <caret line="111" column="19" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
           <folding>
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#2838#2839#0" expanded="true" />
+            <element signature="e#2872#2873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/tree/BinTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/tree/BinTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="89" column="24" lean-forward="true" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="32" />
+        <state relative-caret-position="249">
+          <caret line="108" column="20" lean-forward="false" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
           <folding>
             <element signature="e#680#681#0" expanded="true" />
             <element signature="e#707#708#0" expanded="true" />
@@ -881,12 +907,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/javartisan/tsinghua/ds/tree/BinTreeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javartisan/tsinghua/ds/tree/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="34" />
+        <state relative-caret-position="297">
+          <caret line="105" column="27" lean-forward="false" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
           </folding>
         </state>
       </provider>
