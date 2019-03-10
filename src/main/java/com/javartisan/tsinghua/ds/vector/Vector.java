@@ -3,9 +3,8 @@ package com.javartisan.tsinghua.ds.vector;
 import java.util.Random;
 
 /**
- * @author javartisan
+ * @author:javartisan
  * @mail:javartisan@163.com
- * @description:邓俊辉数据结构之向量
  */
 public class Vector<T extends Comparable<T>> {
 

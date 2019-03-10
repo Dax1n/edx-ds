@@ -1,15 +1,14 @@
 package com.javartisan.tsinghua.ds.tree;
 
+/**
+ * @author:javartisan
+ * @mail:javartisan@163.com
+ */
 public class BinTree<T> {
 
     private int size;
     private int height;
-
     private Node<T> root;
-
-    public Node<T> getRoot() {
-        return root;
-    }
 
     public void setRoot(Node<T> root) {
         this.root = root;
@@ -60,7 +59,7 @@ public class BinTree<T> {
      *
      * @return
      */
-    public void heightInternal() {
+    private void heightInternal() {
         // 默认值为树空
         int heightValue = -1;
         if (root != null) {
@@ -69,12 +68,47 @@ public class BinTree<T> {
         height = heightValue;
     }
 
-    public static void main(String[] args) {
-        BinTree tree = new BinTree();
-        tree.setRoot(Node.build());
-        System.out.println(tree.size());
-        System.out.println(tree.height());
+    /**
+     * 先序递归：先遍历当前节点，之后遍历左节点，最后遍历右节点的顺序为先序遍历；
+     * 所以先中后序遍历的决定因素是：是由遍历当前节点的次序决定。
+     */
+    public void preRecursiveOrder() {
+    }
 
+    /**
+     * 中序递归
+     */
+    public void inRecursiveOrder() {
+    }
+
+    /**
+     * 后序递归
+     */
+    public void postRecursiveOrder() {
+    }
+
+    /**
+     * 先序非递归
+     */
+    public void preOrder() {
+    }
+
+    /**
+     * 中序非递归
+     */
+    public void inOrder() {
+    }
+
+    /**
+     * 后序非递归
+     */
+    public void postOrder() {
+    }
+
+    /**
+     * 层次递归
+     */
+    public void levelOrder() {
     }
 
 }

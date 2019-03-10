@@ -1,7 +1,9 @@
 package com.javartisan.tsinghua.ds.tree;
 
-import java.util.Map;
-
+/**
+ * @author:javartisan
+ * @mail:javartisan@163.com
+ */
 class Node<T> {
     T data;
     Node parent;
