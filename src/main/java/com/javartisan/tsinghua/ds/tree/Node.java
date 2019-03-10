@@ -17,12 +17,14 @@ class Node<T> {
 
     public void insertAsLeftChild(T e) {
         Node node = new Node(e);
+        node.left = this.left;
         node.parent = this;
         this.left = node;
     }
 
     public void insertAsRightChild(T e) {
         Node node = new Node(e);
+        node.right = this.right;
         node.parent = this;
         this.right = node;
     }

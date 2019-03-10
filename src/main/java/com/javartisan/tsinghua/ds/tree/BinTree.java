@@ -2,6 +2,8 @@ package com.javartisan.tsinghua.ds.tree;
 
 public class BinTree<T> {
 
+    private int size;
+
     private Node<T> root;
 
     public Node<T> getRoot() {
@@ -10,14 +12,39 @@ public class BinTree<T> {
 
     public void setRoot(Node<T> root) {
         this.root = root;
+        size = size();
     }
 
-    public int size() {
-        int size = 0;
-        if (root != null) {
-            size = root.size();
-        }
+    public void insertAsLeftChild(T e) {
+        root.insertAsLeftChild(e);
+        size++;
+    }
+
+    public void insertAsRightChild(T e) {
+        insertAsRightChild(e);
+        size++;
+    }
+
+    /**
+     * 通过二叉树属性获取树的大小
+     *
+     * @return
+     */
+    public int getSize() {
         return size;
+    }
+
+    /**
+     * 通过节点计算获取二叉树的大小
+     *
+     * @return
+     */
+    public int size() {
+        int sizeValue = 0;
+        if (root != null) {
+            sizeValue = root.size();
+        }
+        return sizeValue;
     }
 
     /**
@@ -36,7 +63,7 @@ public class BinTree<T> {
 
     public static void main(String[] args) {
         BinTree tree = new BinTree();
-        tree.root = Node.build();
+        tree.setRoot(Node.build());
         System.out.println(tree.size());
         System.out.println(tree.height());
 
